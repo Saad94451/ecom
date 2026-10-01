@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create Account - Ecom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/stylee.css">
+<link rel="stylesheet" href="assets/css/SignUp.css">
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
+        <h1 class="page-title">Create Your Account</h1>
+        <p class="hero-sub">Join Ecom and enjoy a better shopping experience.</p>
+      </div>
+
+     
+    </div>
+  </section>
+
+  <main class="container main">
+    <div class="signup-grid">
+
+      <div class="promo-panel">
+        <p class="promo-eyebrow"><i class="fa-solid fa-heart" aria-hidden="true"></i> Welcome to Ecom</p>
+        <h2 class="promo-heading">Shop More,<br>Save More</h2>
+        <p class="promo-text">Create your free account to unlock exclusive deals, order tracking and member-only rewards.</p>
+
+        <div class="promo-item">
+          <div class="promo-icon"><i class="fa-solid fa-tags" aria-hidden="true"></i></div>
+          <div>
+            <h4>Exclusive Offers</h4>
+            <p>Be the first to know about our latest deals.</p>
+          </div>
+        </div>
+
+        <div class="promo-item">
+          <div class="promo-icon"><i class="fa-solid fa-box-open" aria-hidden="true"></i></div>
+          <div>
+            <h4>Track Your Orders</h4>
+            <p>Follow every order in real time.</p>
+          </div>
+        </div>
+
+        <div class="promo-item">
+          <div class="promo-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+          <div>
+            <h4>Special Rewards</h4>
+            <p>Earn points and unlock extra discounts.</p>
+          </div>
+        </div>
+
+        <div class="promo-item">
+          <div class="promo-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+          <div>
+            <h4>Faster Checkout</h4>
+            <p>Save your details and pay in one click.</p>
+          </div>
+        </div>
+
+        <blockquote class="promo-quote">
+          <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+          <p>Ecom made online shopping simple for me. Fast delivery, easy returns and rewards that actually add up.</p>
+          <footer>
+            <span class="quote-name">Ayesha Khan</span>
+            <span class="quote-role">Verified Customer</span>
+          </footer>
+        </blockquote>
+
+        <div class="promo-stats">
+          <div class="stat">
+            <span class="stat-value">12k+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">5k+</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">4.9 <i class="fa-solid fa-star" aria-hidden="true"></i></span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="login-form">
+        <p class="form-eyebrow">Create Account</p>
+        <h2>Sign Up</h2>
+        <p class="sub">Fill in the details below to create your account.</p>
+
+        <div class="role-tabs" role="tablist" aria-label="Account type">
+          <button type="button" class="role-tab active" data-role="user" role="tab" aria-selected="true">
+            <i class="fa-solid fa-user" aria-hidden="true"></i> As a User
+          </button>
+          <button type="button" class="role-tab" data-role="seller" role="tab" aria-selected="false">
+            <i class="fa-solid fa-store" aria-hidden="true"></i> As a Seller
+          </button>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name <span class="req">*</span></label>
+            <div class="input-wrap">
+              <i class="input-icon fa-solid fa-user" aria-hidden="true"></i>
+              <input type="text" placeholder="Enter your full name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address <span class="req">*</span></label>
+            <div class="input-wrap">
+              <i class="input-icon fa-solid fa-envelope" aria-hidden="true"></i>
+              <input type="email" placeholder="Enter your email address" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group seller-only">
+          <label>Store Name <span class="req">*</span></label>
+          <div class="input-wrap">
+            <i class="input-icon fa-solid fa-store" aria-hidden="true"></i>
+            <input type="text" placeholder="Enter your store name" id="storeNameField">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number <span class="req">*</span></label>
+          <div class="input-wrap">
+            <i class="input-icon fa-solid fa-phone" aria-hidden="true"></i>
+            <input type="tel" placeholder="+1 612 567 - 8899" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Password <span class="req">*</span></label>
+          <div class="input-wrap">
+            <i class="input-icon fa-solid fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Create your password" id="passwordField" required>
+            <button type="button" class="toggle-eye" id="togglePassword" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Confirm Password <span class="req">*</span></label>
+          <div class="input-wrap">
+            <i class="input-icon fa-solid fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Confirm your password" id="confirmPasswordField" required>
+            <button type="button" class="toggle-eye" id="toggleConfirmPassword" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <label class="terms-row">
+          <input type="checkbox" required>
+          I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>.
+        </label>
+
+        <button type="submit" class="signin-btn">Create Account <i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i></button>
+
+     
+
+        <p class="signup-line">Already have an account? <a href="signin.html">Sign In</a></p>
+      </form>
+    </div>
+
+    
+
+  </main>
+
+<script src="assets/js/SignUp.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

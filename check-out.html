@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Ecom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/stylee.css">
+<link rel="stylesheet" href="assets/css/check-out.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-left">
+      <span><i class="fa-solid fa-phone"></i>Shopping Hotline: (+1) 658 567 – 5839</span>
+    </div>
+    <div class="top-right">
+      <a href="contact.html"><i class="fa-solid fa-circle-question"></i>Guide &amp; Support</a>
+      <a href="#"><i class="fa-solid fa-globe"></i>English</a>
+      <!-- <a href="check-out.html"><i class="fa-solid fa-truck"></i>Order Tracking</a> -->
+      <a href="signin.html"><i class="fa-solid fa-user"></i>Login &amp; Register</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <i class="fa-solid fa-bars menu-toggle" id="menuToggle" role="button" tabindex="0" aria-label="Open menu"></i>
+    <a href="index.html" class="logo"><i class="fa-solid fa-heart"></i>Ecom</a>
+
+    <form class="search-bar">
+      <select>
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Mobiles</option>
+      </select>
+      <input type="text" placeholder="Search for products...">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    </form>
+
+    <div class="header-icons">
+      <a href="signin.html" class="icon-item" aria-label="Login">
+        <i class="fa-solid fa-user"></i>
+
+      </a>
+      <a href="signin.html" class="icon-item" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+      <a href="check-out.html" class="icon-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">9</span>
+        <div>
+          <div>My Cart</div>
+          <strong>$0.00</strong>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="has-mega">
+        <a href="index.html#flash-deals">Shop <i class="fa-solid fa-caret-down"></i></a>
+        <div class="mega-menu">
+          <div class="container">
+            <div class="mega-grid">
+              <div class="mega-col">
+                <h4 class="mega-col-title">Categories</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-shirt"></i>Fashion &amp; Clothing</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-mobile-screen-button"></i>Mobiles &amp; Tablets</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-couch"></i>Home &amp; Living</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-wand-magic-sparkles"></i>Beauty &amp; Care</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-dumbbell"></i>Sports &amp; Outdoor</a>
+                </div>
+              </div>
+              <div class="mega-col">
+                <h4 class="mega-col-title">Collections</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals">New Arrivals <span class="mega-tag new">New</span></a>
+                  <a href="index.html#flash-deals">Best Sellers</a>
+                  <a href="index.html#flash-deals">Trending Now <span class="mega-tag trend">Trend</span></a>
+                  <a href="index.html#flash-deals">Top Rated</a>
+                  <a href="index.html#flash-deals">Clearance Sale <span class="mega-tag hot">Hot</span></a>
+                </div>
+              </div>
+              <div class="mega-col">
+                <h4 class="mega-col-title">Deals &amp; Offers</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-bolt"></i>Flash Deals</a>
+                  <a href="check-out.html"><i class="fa-solid fa-ticket"></i>Coupons &amp; Vouchers</a>
+                  <a href="check-out.html"><i class="fa-solid fa-gift"></i>Gift Cards</a>
+                  <a href="check-out.html"><i class="fa-solid fa-box-open"></i>Bundle Offers</a>
+                  <a href="check-out.html"><i class="fa-solid fa-truck-fast"></i>Free Shipping</a>
+                </div>
+              </div>
+              <div class="mega-col mega-products">
+                <h4 class="mega-col-title">Featured Products</h4>
+                <div class="mega-cards">
+                  <div class="mega-card">
+                    <a href="check-out.html" class="mega-card-img">
+                      <img src="images/headphones.jpg" alt="Wireless Headphones">
+                      <span class="mega-card-badge">Hot</span>
+                    </a>
+                    <div class="mega-card-body">
+                      <div class="mega-card-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(4.8)</span></div>
+                      <a href="check-out.html" class="mega-card-name">Wireless Headphones</a>
+                      <div class="mega-card-price">$59.00 <del>$89.00</del></div>
+                    </div>
+                  </div>
+                  <div class="mega-card">
+                    <a href="check-out.html" class="mega-card-img">
+                      <img src="images/earbuds.jpg" alt="Wireless Earbuds">
+                      <span class="mega-card-badge">New</span>
+                    </a>
+                    <div class="mega-card-body">
+                      <div class="mega-card-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>(4.5)</span></div>
+                      <a href="check-out.html" class="mega-card-name">Wireless Earbuds</a>
+                      <div class="mega-card-price">$29.00 <del>$45.00</del></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-promo">
+              <div class="mega-promo-item">
+                <i class="fa-solid fa-tags"></i>
+                <div><strong>Sale — Up to 50% OFF</strong><span class="mega-promo-sub">On selected fashion &amp; gadgets</span></div>
+              </div>
+              <div class="mega-promo-item">
+                <i class="fa-solid fa-fire"></i>
+                <div><strong>Hot Sale — 25% OFF</strong><span class="mega-promo-sub">Flash deals end this week</span></div>
+              </div>
+              <a href="index.html#flash-deals" class="mega-promo-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Become a Vendor</a></li>
+      <li class="flash"><a href="index.html#flash-deals"><i class="fa-solid fa-bolt"></i> Flash Deals</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- <a href="check-out.html">Recently Viewed</a> -->
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer-overlay" id="navDrawerOverlay"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-head">
+    <a href="index.html" class="logo"><i class="fa-solid fa-heart"></i>Ecom</a>
+    <button type="button" class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="nav-drawer-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#flash-deals">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Become a Vendor</a>
+    <a href="index.html#flash-deals">Flash Deals</a>
+    <!-- <a href="check-out.html">Recently Viewed</a> -->
+    <a href="contact.html">Guide &amp; Support</a>
+    <!-- <a href="check-out.html">Order Tracking</a> -->
+    <a href="signin.html">Login &amp; Register</a>
+  </div>
+</aside>
+
+    <section class="page-hero">
+        <div class="checkout-shell">
+            <div>
+                <div class="crumb">Home <span> &gt; </span> <strong>Checkout</strong></div>
+                <h1 class="checkout-title">Checkout</h1>
+            </div>
+
+            <div class="cart-illustration" aria-hidden="true">
+                <div class="cart-shadow"></div>
+                <div class="bag b1"></div>
+                <div class="bag b2"></div>
+                <div class="bag b3"></div>
+                <div class="cart-body"></div>
+                <div class="cart-wheel left"></div>
+                <div class="cart-wheel right"></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="checkout-main">
+        <div class="checkout-grid">
+            <section class="checkout-left">
+                <div class="section-block">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Billing Details</div>
+                    </div>
+
+                    <div class="field-grid">
+                        <div class="field">
+                            <label>Full Name *</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="field">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="field">
+                            <label>Phone Number *</label>
+                            <input type="text" placeholder="+92 300 1234567">
+                        </div>
+                        <div class="field">
+                            <label>&nbsp;</label>
+                            <input type="text" placeholder="" value="" style="visibility:hidden; border-color: transparent; background: transparent;">
+                        </div>
+                        <div class="field" style="grid-column: 1 / -1;">
+                            <label>Address *</label>
+                            <input type="text" placeholder="Street address">
+                        </div>
+                        <div class="field">
+                            <label>City *</label>
+                            <input type="text" placeholder="Enter city">
+                        </div>
+                        <div class="field">
+                            <label>Postcode / ZIP *</label>
+                            <input type="text" placeholder="Enter postcode">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Shipping Method</div>
+                    </div>
+
+                    <div class="shipping-methods">
+                        <div class="option active">
+                            <div class="option-main">
+                                <span class="radio"></span>
+                                <span class="option-name">Standard Shipping (3-5 working days)</span>
+                            </div>
+                            <span class="option-price">$5.00</span>
+                        </div>
+
+                        <div class="option">
+                            <div class="option-main">
+                                <span class="radio"></span>
+                                <span class="option-name">Express Shipping (2-3 working days)</span>
+                            </div>
+                            <span class="option-price">$12.00</span>
+                        </div>
+
+                        <div class="option">
+                            <div class="option-main">
+                                <span class="radio"></span>
+                                <span class="option-name">Free Shipping (Orders over $100)</span>
+                            </div>
+                            <span class="option-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-block" style="border-bottom: 0; margin-bottom: 0; padding-bottom: 0;">
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Payment Method</div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <div class="payment-option active">
+                            <span class="radio" style="margin-left: 4px;"></span>
+                            <span class="option-name">Cash On Delivery</span>
+                            <span class="option-price" style="font-size: 12px; color: #6d6d6d;">Pay with cash when your order arrives.</span>
+                        </div>
+
+                        <div class="payment-option">
+                            <span class="radio" style="margin-left: 4px;"></span>
+                            <span class="option-name">Credit / Debit Card</span>
+                            <span class="payment-icons" aria-label="card types">
+                                <span class="credit-icon visa">V</span>
+                                <span class="credit-icon mc">M</span>
+                                <span class="credit-icon amex">A</span>
+                            </span>
+                        </div>
+
+                        <div class="payment-option">
+                            <span class="radio" style="margin-left: 4px;"></span>
+                            <span class="option-name">PayPal</span>
+                            <span class="credit-icon paypal">P</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-actions">
+                    <button type="button" class="primary-btn">Place Order</button>
+                    <button type="button" class="secondary-btn">Back To Cart</button>
+                </div>
+            </section>
+
+            <aside class="checkout-right">
+                <div class="summary-card">
+                    <h3 class="summary-title">Order Summary</h3>
+
+                    <div class="summary-items">
+                        <div class="summary-row">
+                            <div class="name">
+                                <span class="product-thumb"></span>
+                                <span>Adidas Originals Shoes</span>
+                            </div>
+                            <span class="qty">x1</span>
+                            <span class="price">$79.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <div class="name">
+                                <span class="product-thumb" style="background: linear-gradient(135deg, #4f545a, #b4b9bf);"></span>
+                                <span>Wireless Earbuds</span>
+                            </div>
+                            <span class="qty">x1</span>
+                            <span class="price">$29.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <div class="name">
+                                <span class="product-thumb" style="background: linear-gradient(135deg, #171717, #4a4a4a);"></span>
+                                <span>Men's T-Shirt</span>
+                            </div>
+                            <span class="qty">x1</span>
+                            <span class="price">$16.00</span>
+                        </div>
+                    </div>
+
+                    <div class="totals">
+                        <div class="totals-row">
+                            <span>Subtotal</span>
+                            <strong>$127.00</strong>
+                        </div>
+                        <div class="totals-row">
+                            <span>Shipping</span>
+                            <strong>$5.00</strong>
+                        </div>
+                        <div class="totals-row total-value">
+                            <span>Total</span>
+                            <span>$132.00</span>
+                        </div>
+                    </div>
+
+                    <div class="summary-note">
+                        <div class="shield"></div>
+                        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-promo">
+    <div class="promo-dots">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="footer-shoe-img">
+      <img src="images/high15.png" alt="Shoe">
+    </div>
+
+    <div class="container footer-promo-inner">
+      <div class="promo-offer">
+        <h3>Get $20 off your <span>first order over $90!</span></h3>
+        <a href="index.html#flash-deals" class="join-link">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="promo-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Visit our flagship store at 128 Market Street, Lahore — Mon to Sat, 9:00am – 8:00pm.</p>
+      </div>
+
+      <div class="promo-certified">
+        <div class="b-badge">
+          <span>E</span>
+          <small>Certified</small>
+        </div>
+        <p>Every order is quality-checked, fairly priced and backed by real people.</p>
+      </div>
+    </div>
+  </div>
+ <div class="container footer-top">
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="index.html#flash-deals">Flash Deals</a></li>
+        <li><a href="index.html#flash-deals">New Arrivals</a></li>
+        <li><a href="index.html#flash-deals">Best Sellers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="contact.html">Customer Service</a></li>
+        <li><a href="contact.html">Shipping &amp; Delivery</a></li>
+        <li><a href="contact.html">Returns &amp; Refunds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="signin.html">Login &amp; Register</a></li>
+        <li><a href="signup.html">Become a Vendor</a></li>
+        <li><a href="check-out.html">My Cart</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>Established 1993 © 2026 Ecom. All rights reserved. <a href="#">Privacy Policy</a>. Site by Pointer</p>
+      <div class="footer-pay" aria-label="Accepted payment methods">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-cc-apple-pay"></i>
+        <i class="fa-brands fa-google-pay"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecom - Multipurpose eCommerce Store</title>
+<link rel="stylesheet" href="assets/css/stylee.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-left">
+      <span><i class="fa-solid fa-phone"></i>Shopping Hotline: (+1) 658 567 – 5839</span>
+    </div>
+    <div class="top-right">
+      <a href="contact.html"><i class="fa-solid fa-circle-question"></i>Guide &amp; Support</a>
+      <a href="#"><i class="fa-solid fa-globe"></i>English</a>
+      <!-- <a href="check-out.html"><i class="fa-solid fa-truck"></i>Order Tracking</a> -->
+      <a href="signin.html"><i class="fa-solid fa-user"></i>Login &amp; Register</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <i class="fa-solid fa-bars menu-toggle" id="menuToggle" role="button" tabindex="0" aria-label="Open menu"></i>
+    <a href="index.html" class="logo"><i class="fa-solid fa-heart"></i>Ecom</a>
+
+    <form class="search-bar">
+      <select>
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Mobiles</option>
+      </select>
+      <input type="text" placeholder="Search for products...">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    </form>
+
+    <div class="header-icons">
+      <a href="signin.html" class="icon-item" aria-label="Login">
+        <i class="fa-solid fa-user"></i>
+
+      </a>
+      <a href="signin.html" class="icon-item" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+      <a href="check-out.html" class="icon-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">9</span>
+        <div>
+          <div>My Cart</div>
+          <strong>$0.00</strong>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="has-mega">
+        <a href="index.html#flash-deals">Shop <i class="fa-solid fa-caret-down"></i></a>
+        <div class="mega-menu">
+          <div class="container">
+            <div class="mega-grid">
+              <div class="mega-col">
+                <h4 class="mega-col-title">Categories</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-shirt"></i>Fashion &amp; Clothing</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-mobile-screen-button"></i>Mobiles &amp; Tablets</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-couch"></i>Home &amp; Living</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-wand-magic-sparkles"></i>Beauty &amp; Care</a>
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-dumbbell"></i>Sports &amp; Outdoor</a>
+                </div>
+              </div>
+              <div class="mega-col">
+                <h4 class="mega-col-title">Collections</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals">New Arrivals <span class="mega-tag new">New</span></a>
+                  <a href="index.html#flash-deals">Best Sellers</a>
+                  <a href="index.html#flash-deals">Trending Now <span class="mega-tag trend">Trend</span></a>
+                  <a href="index.html#flash-deals">Top Rated</a>
+                  <a href="index.html#flash-deals">Clearance Sale <span class="mega-tag hot">Hot</span></a>
+                </div>
+              </div>
+              <div class="mega-col">
+                <h4 class="mega-col-title">Deals &amp; Offers</h4>
+                <div class="mega-links">
+                  <a href="index.html#flash-deals"><i class="fa-solid fa-bolt"></i>Flash Deals</a>
+                  <a href="check-out.html"><i class="fa-solid fa-ticket"></i>Coupons &amp; Vouchers</a>
+                  <a href="check-out.html"><i class="fa-solid fa-gift"></i>Gift Cards</a>
+                  <a href="check-out.html"><i class="fa-solid fa-box-open"></i>Bundle Offers</a>
+                  <a href="check-out.html"><i class="fa-solid fa-truck-fast"></i>Free Shipping</a>
+                </div>
+              </div>
+              <div class="mega-col mega-products">
+                <h4 class="mega-col-title">Featured Products</h4>
+                <div class="mega-cards">
+                  <div class="mega-card">
+                    <a href="check-out.html" class="mega-card-img">
+                      <img src="images/headphones.jpg" alt="Wireless Headphones">
+                      <span class="mega-card-badge">Hot</span>
+                    </a>
+                    <div class="mega-card-body">
+                      <div class="mega-card-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(4.8)</span></div>
+                      <a href="check-out.html" class="mega-card-name">Wireless Headphones</a>
+                      <div class="mega-card-price">$59.00 <del>$89.00</del></div>
+                    </div>
+                  </div>
+                  <div class="mega-card">
+                    <a href="check-out.html" class="mega-card-img">
+                      <img src="images/earbuds.jpg" alt="Wireless Earbuds">
+                      <span class="mega-card-badge">New</span>
+                    </a>
+                    <div class="mega-card-body">
+                      <div class="mega-card-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>(4.5)</span></div>
+                      <a href="check-out.html" class="mega-card-name">Wireless Earbuds</a>
+                      <div class="mega-card-price">$29.00 <del>$45.00</del></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-promo">
+              <div class="mega-promo-item">
+                <i class="fa-solid fa-tags"></i>
+                <div><strong>Sale — Up to 50% OFF</strong><span class="mega-promo-sub">On selected fashion &amp; gadgets</span></div>
+              </div>
+              <div class="mega-promo-item">
+                <i class="fa-solid fa-fire"></i>
+                <div><strong>Hot Sale — 25% OFF</strong><span class="mega-promo-sub">Flash deals end this week</span></div>
+              </div>
+              <a href="index.html#flash-deals" class="mega-promo-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Become a Vendor</a></li>
+      <li class="flash"><a href="index.html#flash-deals"><i class="fa-solid fa-bolt"></i> Flash Deals</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- <a href="check-out.html">Recently Viewed</a> -->
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer-overlay" id="navDrawerOverlay"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-head">
+    <a href="index.html" class="logo"><i class="fa-solid fa-heart"></i>Ecom</a>
+    <button type="button" class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="nav-drawer-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#flash-deals">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Become a Vendor</a>
+    <a href="index.html#flash-deals">Flash Deals</a>
+    <!-- <a href="check-out.html">Recently Viewed</a> -->
+    <a href="contact.html">Guide &amp; Support</a>
+    <!-- <a href="check-out.html">Order Tracking</a> -->
+    <a href="signin.html">Login &amp; Register</a>
+  </div>
+</aside>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <button type="button" class="hero-arrow left" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <div class="hero-slides">
+      <div class="hero-slide active">
+        <div class="hero-content">
+          <div class="hero-tag">Adidas Official</div>
+          <h1 class="hero-title">ADODES ORIGINALS<br>&amp; BOOST SHOES<br>SALE ONLINE UK</h1>
+          <p class="hero-sub">50% OFF - Shop Shoes &amp; Clothing From Adidas</p>
+          <a href="#" class="hero-btn">Shop Now</a>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/image.png" alt="Adidas Shoes">
+        </div>
+      </div>
+
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div class="hero-tag">Audio Zone</div>
+          <h2 class="hero-title">WIRELESS HEADPHONES<br>MEGA SALE ONLINE</h2>
+          <p class="hero-sub">Up to 40% OFF - Shop Top Audio Brands</p>
+          <a href="index.html#flash-deals" class="hero-btn">Shop Now</a>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/headphones.jpg" alt="Wireless Headphones">
+        </div>
+      </div>
+
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div class="hero-tag">Smart Gadgets</div>
+          <h2 class="hero-title">TRUE WIRELESS<br>EARBUDS DEAL WEEK</h2>
+          <p class="hero-sub">Save 35% Today - Premium Sound, Better Price</p>
+          <a href="index.html#flash-deals" class="hero-btn">Shop Now</a>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/earbuds.jpg" alt="True Wireless Earbuds">
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="hero-arrow right" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="hero-dots">
+    <button type="button" class="active" aria-label="Go to slide 1"></button>
+    <button type="button" aria-label="Go to slide 2"></button>
+    <button type="button" aria-label="Go to slide 3"></button>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+  <div class="container">
+    <div class="categories-header">
+      <h2>Shop By Category</h2>
+      <p>Explore our most-loved categories and grab your favourites at unbeatable prices.</p>
+    </div>
+    <div class="category-grid">
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-shirt"></i></span>
+        <h3>Fashion &amp; Clothing</h3>
+        <span class="category-count">1,240 Items</span>
+      </a>
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <h3>Mobiles &amp; Tablets</h3>
+        <span class="category-count">860 Items</span>
+      </a>
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-couch"></i></span>
+        <h3>Home &amp; Living</h3>
+        <span class="category-count">540 Items</span>
+      </a>
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <h3>Beauty &amp; Care</h3>
+        <span class="category-count">430 Items</span>
+      </a>
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-dumbbell"></i></span>
+        <h3>Sports &amp; Outdoor</h3>
+        <span class="category-count">380 Items</span>
+      </a>
+      <a href="index.html#flash-deals" class="category-card">
+        <span class="category-icon"><i class="fa-solid fa-headphones"></i></span>
+        <h3>Audio &amp; Gadgets</h3>
+        <span class="category-count">720 Items</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="flash-deals" id="flash-deals">
+  <div class="container">
+    <div class="flash-header">
+      <div>
+        <h2>Shop Flash Deals</h2>
+        <p>Daily updates of all special deals. Bookmark this page &amp; come back often so you don't miss it!</p>
+      </div>
+      <div class="countdown">
+        <span class="label">Deal ends in:</span>
+        <span id="countdown-timer">07:00:00:00</span>
+      </div>
+    </div>
+
+   <div class="product-grid-container">
+
+ <div class="product-grid">
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-27%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/woman.jpg" alt="Winter Travel Coat">
+    <div class="vendor">Iccug Apparel</div>
+    <div class="product-name">Oversized Wool Trench Coat with Tote</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$152.99 <del>$209.00</del></div>
+    <div class="sold-info">Sold: 13/26</div>
+    <div class="progress-bar"><span style="width:50%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-6%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high2.png" alt="Vinyl Record Album Art">
+    <div class="vendor">Elppa Music</div>
+    <div class="product-name">Limited Edition Vinyl Record</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$290.90 <del>$309.00</del></div>
+    <div class="sold-info">Sold: 9/40</div>
+    <div class="progress-bar"><span style="width:22%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-49%</span></div>
+    <img src="images/high16.png" alt="Camera Gimbal Stabilizer">
+    <div class="vendor">Elgoog Cam</div>
+    <div class="product-name">Pro Camera Gimbal Stabilizer</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="price">$108.99 <del>$110.99</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="progress-bar" style="margin-top:6px"><span style="width:38%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-23%</span></div>
+    <img src="images/headphones.jpg" alt="Red Wireless Headphones">
+    <div class="vendor">Hcetigol</div>
+    <div class="product-name">Cosmic Byte GS410 Headset with Mic</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$39.90 <del>$59.00</del></div>
+    <div class="vendor-name">Vendor: Boston Hayden</div>
+    <div class="sold-info">Sold: 4/79</div>
+    <div class="progress-bar"><span style="width:5%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-25%</span></div>
+    <img src="images/high4.png" alt="Portrait Fashion Look">
+    <div class="vendor">Iccug Apparel</div>
+    <div class="product-name">Soft Curl Hair Styling Set</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$890.99 <del>$1,299.00</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="sold-info">Sold: 46/97</div>
+    <div class="progress-bar"><span style="width:47%"></span></div>
+  </div>
+</div>
+<div class="pagination-dots"><span class="active"></span><span></span><span></span></div>
+
+
+<!-- ================= ROW 2 ================= -->
+<div class="product-grid">
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-27%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high8.png" alt="Home Studio Speaker Setup">
+    <div class="vendor">Hcetigol</div>
+    <div class="product-name">Ambient Studio Monitor Speaker</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$152.99 <del>$209.00</del></div>
+    <div class="sold-info">Sold: 13/26</div>
+    <div class="progress-bar"><span style="width:50%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-6%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high9.png" alt="Street Style Look">
+    <div class="vendor">Elppa Apparel</div>
+    <div class="product-name">Urban Street Style Outfit Set</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$290.90 <del>$309.00</del></div>
+    <div class="sold-info">Sold: 9/40</div>
+    <div class="progress-bar"><span style="width:22%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-49%</span></div>
+    <img src="images/high10.png" alt="Retro Sunglasses">
+    <div class="vendor">Iccug</div>
+    <div class="product-name">Retro Round Sunglasses</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="price">$108.99 <del>$110.99</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="progress-bar" style="margin-top:6px"><span style="width:38%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-23%</span></div>
+    <img src="images/high11.png" alt="Wireless Speaker Device">
+    <div class="vendor">Iccug Tech</div>
+    <div class="product-name">Compact Wireless Bluetooth Speaker</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$39.90 <del>$59.00</del></div>
+    <div class="vendor-name">Vendor: Boston Hayden</div>
+    <div class="sold-info">Sold: 4/79</div>
+    <div class="progress-bar"><span style="width:5%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-25%</span></div>
+    <img src="images/high26.png" alt="Black Jacket Portrait">
+    <div class="vendor">Elgoog Apparel</div>
+    <div class="product-name">Bold Statement Leather Jacket</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$890.99 <del>$1,299.00</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="sold-info">Sold: 46/97</div>
+    <div class="progress-bar"><span style="width:47%"></span></div>
+  </div>
+</div>
+<div class="pagination-dots"><span class="active"></span><span></span><span></span></div>
+
+
+<!-- ================= ROW 3 ================= -->
+<div class="product-grid">
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-27%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high22.png" alt="City Bridge Wall Art">
+    <div class="vendor">Hcetigol Decor</div>
+    <div class="product-name">Cityscape Bridge Canvas Print</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$152.99 <del>$209.00</del></div>
+    <div class="sold-info">Sold: 13/26</div>
+    <div class="progress-bar"><span style="width:50%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-6%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high23.png" alt="Red Gaming Mouse">
+    <div class="vendor">Elppa Gaming</div>
+    <div class="product-name">RGB Wireless Gaming Mouse</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$290.90 <del>$309.00</del></div>
+    <div class="sold-info">Sold: 9/40</div>
+    <div class="progress-bar"><span style="width:22%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-49%</span></div>
+    <img src="images/high24.png" alt="Mechanical Gaming Keyboard">
+    <div class="vendor">Iccug Gaming</div>
+    <div class="product-name">MKA-1C Mechanical Keyboard</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="price">$108.99 <del>$110.99</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="progress-bar" style="margin-top:6px"><span style="width:38%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-23%</span></div>
+    <img src="images/high25.png" alt="PC Build RGB Parts">
+    <div class="vendor">Iccug PC</div>
+    <div class="product-name">RGB Water-Cooling PC Kit</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$39.90 <del>$59.00</del></div>
+    <div class="vendor-name">Vendor: Boston Hayden</div>
+    <div class="sold-info">Sold: 4/79</div>
+    <div class="progress-bar"><span style="width:5%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-25%</span></div>
+    <img src="images/high12.png" alt="Camera Lens Close-up">
+    <div class="vendor">Elgoog Cam</div>
+    <div class="product-name">Professional DSLR Lens 50mm</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$890.99 <del>$1,299.00</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="sold-info">Sold: 46/97</div>
+    <div class="progress-bar"><span style="width:47%"></span></div>
+  </div>
+</div>
+<div class="pagination-dots"><span class="active"></span><span></span><span></span></div>
+
+
+<!-- ================= ROW 4 ================= -->
+<div class="product-grid">
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-27%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high21.png" alt="Luxury Perfume Bottle">
+    <div class="vendor">Hcetigol Beauty</div>
+    <div class="product-name">Signature Eau de Parfum</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$152.99 <del>$209.00</del></div>
+    <div class="sold-info">Sold: 13/26</div>
+    <div class="progress-bar"><span style="width:50%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-6%</span><span class="badge featured">FEATURED</span></div>
+    <img src="images/high20.png" alt="Man Wearing Cap Portrait">
+    <div class="vendor">Elppa Apparel</div>
+    <div class="product-name">Classic Cotton Baseball Cap</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$290.90 <del>$309.00</del></div>
+    <div class="sold-info">Sold: 9/40</div>
+    <div class="progress-bar"><span style="width:22%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-49%</span></div>
+    <img src="images/high19.png" alt="Man in Plaid Shirt">
+    <div class="vendor">Iccug Apparel</div>
+    <div class="product-name">FAJA Men's Flannel Shirt</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="price">$108.99 <del>$110.99</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="progress-bar" style="margin-top:6px"><span style="width:38%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-23%</span></div>
+    <img src="images/high17.png" alt="Wireless Neckband Earbuds">
+    <div class="vendor">Iccug Tech</div>
+    <div class="product-name">Wireless Neckband Earbuds</div>
+    <div class="stars">★★★★☆</div>
+    <div class="price">$39.90 <del>$59.00</del></div>
+    <div class="vendor-name">Vendor: Boston Hayden</div>
+    <div class="sold-info">Sold: 4/79</div>
+    <div class="progress-bar"><span style="width:5%"></span></div>
+  </div>
+
+  <div class="product-card">
+    <div class="badge-row"><span class="badge off">-25%</span></div>
+    <img src="images/high18.png" alt="Soccer Ball 2026">
+    <div class="vendor">Elgoog Sports</div>
+    <div class="product-name">Official 2026 World Cup Soccer Ball</div>
+    <div class="stars">★★★★★</div>
+    <div class="price">$890.99 <del>$1,299.00</del></div>
+    <div class="vendor-name">Vendor: Gia Marquez</div>
+    <div class="sold-info">Sold: 46/97</div>
+    <div class="progress-bar"><span style="width:47%"></span></div>
+  </div>
+</div>
+<div class="pagination-dots"><span class="active"></span><span></span><span></span></div>
+</div>
+</div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-promo">
+    <div class="promo-dots">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="footer-shoe-img">
+      <img src="images/high15.png" alt="Shoe">
+    </div>
+
+    <div class="container footer-promo-inner">
+      <div class="promo-offer">
+        <h3>Get $20 off your <span>first order over $90!</span></h3>
+        <a href="index.html#flash-deals" class="join-link">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="promo-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Visit our flagship store at 128 Market Street, Lahore — Mon to Sat, 9:00am – 8:00pm.</p>
+      </div>
+
+      <div class="promo-certified">
+        <div class="b-badge">
+          <span>E</span>
+          <small>Certified</small>
+        </div>
+        <p>Every order is quality-checked, fairly priced and backed by real people.</p>
+      </div>
+    </div>
+  </div>
+ <div class="container footer-top">
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="index.html#flash-deals">Flash Deals</a></li>
+        <li><a href="index.html#flash-deals">New Arrivals</a></li>
+        <li><a href="index.html#flash-deals">Best Sellers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="contact.html">Customer Service</a></li>
+        <li><a href="contact.html">Shipping &amp; Delivery</a></li>
+        <li><a href="contact.html">Returns &amp; Refunds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="signin.html">Login &amp; Register</a></li>
+        <li><a href="signup.html">Become a Vendor</a></li>
+        <li><a href="check-out.html">My Cart</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>Established 1993 © 2026 Ecom. All rights reserved. <a href="#">Privacy Policy</a>. Site by Pointer</p>
+      <div class="footer-pay" aria-label="Accepted payment methods">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-cc-apple-pay"></i>
+        <i class="fa-brands fa-google-pay"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
